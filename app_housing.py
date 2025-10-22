@@ -10,7 +10,7 @@ filter = st.slider('Minimal Median House Price:', 0, 500001, 200000)
 st.subheader('see more filters in the sidebar')
 st.map(df)
 
-plt.figure(figsize=(12,6))
+plt.subplots(figsize=(12,6))
 sns.histplot(df['median_house_value'].dropna(), bins=30, kde=False, color='tab:blue', edgecolor='w')
 plt.title('Histogram of median_house_value')
 plt.grid(axis='y', alpha=0.6)
