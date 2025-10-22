@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-st.title('California Housing Data (1990)')
+st.title('California Housing Data (1990) by Xing Pingping')
 df = pd.read_csv('housing.csv')
 
 filter = st.slider('Minimal Median House Price:', 0, 500001, 200000) 
